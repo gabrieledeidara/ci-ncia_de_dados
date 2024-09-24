@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
-    --bg-color: #222831;
-    --primary-color: #DDDDDD;
-    --secondary-color: #F05454;
+    --bg-color: #7a98c7;
+    --primary-color: #dbe3f3da;
+    --secondary-color: #8f75b1d5;
+    --tipo-fonte:"Lobster&display", sans-serif;
 }
 
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--tipo-fonte);
+    height: 100vh;
+    margin: 0;
+}
