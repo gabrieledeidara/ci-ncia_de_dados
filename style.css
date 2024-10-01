@@ -41,3 +41,13 @@ nav a:hover{
     transform: scale(0.90);
     transition: transform 0.1s;
 }
+footer{
+    display: flex;/*area do rodape flexivel*/
+   align-items: center; /*alinhamento de itens ao centro*/
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;/*largura ocupando 100% do rodape*/
+    height: 3rem;/*altura 3x a medida do root*/
+    margin-top: 2rem;/*altura do topo da margemm externa do rodape em 3rem*/
+}
