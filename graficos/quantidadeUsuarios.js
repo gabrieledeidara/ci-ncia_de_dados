@@ -37,7 +37,7 @@ async function quantidadeUsuariosPorRede() {
                 font: {
                     color: getCSS('--secondary-color')
                 }
-            }la
+            }
         },
         yaxis: {
             tickfont: tickConfig,
