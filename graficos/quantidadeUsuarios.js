@@ -5,7 +5,8 @@ async function quantidadePessoaEstudando() {
     const res = await fetch(url)
     const dados = await res.json()
     const nomeDasRedes = Object.keys(dados)
-    const quantidadePessoasEstudando = Object.values(dados)
+    const quantidadeDeUsuarios = Object.values(dados)
+
 
     const data = [
         {
