@@ -1,17 +1,17 @@
 import { getCSS, tickConfig } from "./common.js"
 
 async function quantidadePessoasEstudando() {
-    const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json';
+    const url = 'https://raw.githubusercontent.com/gabrieledeidara/ci-ncia_de_dados/refs/heads/main/base%20de%20dados/educacao-etapas-de-ensino.json';
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = Object.keys(dados)
-    const quantidadeDeUsuarios = Object.values(dados)
+    const nomeDasEscolas = Object.keys(dados)
+    const quantidadeDeAlunos = Object.values(dados)
 
 
     const data = [
         {
-            x: nomeDasRedes,
-            y: quantidadeDeUsuarios,
+            x: nomeDasEscolas,
+            y: quantidadeDeAlunos,
             type: 'bar',
             marker: {
                 color: getCSS('--primary-color')
@@ -23,7 +23,7 @@ async function quantidadePessoasEstudando() {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'Redes sociais com mais usuários',
+            text: 'Escolas com mais alunos',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
@@ -34,7 +34,7 @@ async function quantidadePessoasEstudando() {
         xaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Nome das redes',
+                text: 'Nome das escolas',
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -43,7 +43,7 @@ async function quantidadePessoasEstudando() {
         yaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Bilhões de usuários ativos',
+                text: 'Bilhões de estudantes ativos',
                 font: {
                     color: getCSS('--secondary-color')
                 }
